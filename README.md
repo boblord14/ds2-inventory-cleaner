@@ -20,7 +20,7 @@ This application is **WINDOWS ONLY**. It will **NOT** work on any linux variants
     1. Make sure your antivirus doesn't act up. Allow the exe past your antivirus if need be
     2. See the concerns section later on if you are worried about security or don't trust the exe download
 3. Run the exe and follow the instructions in the window that pops up
-    1. Running as administrator isn't required, but recommended in order to reduce the possibility of a problem
+    1. Running as administrator is required. See the concerns sections below if you are worried about this.
 4. As long as you followed the instructions in the window, any invalid items in your inventory should be removed, and the game should no longer crash when you open your inventory
 5. If this did not work, an alternative solution can be found by using the [Dark Souls 2 Cheat Engine Table](https://github.com/boblord14/Dark-Souls-2-SotFS-CT-Bob-Edition/releases/latest). See that page for further information
 
@@ -31,6 +31,9 @@ The exe then proceedes to inject this dll into the DarkSoulsII.exe process, givi
 
 ### What about softbans?
 No, this program does *not* get you softbanned ingame from the online servers. You do not need to run DS2 offline, the anticheat doesn't check much, certainly not the pieces used by this software. 
+
+### Why does this need to run as administrator?
+Administrator permissions mitigate the possibility for errors in the file extraction/access and the dll injection/loading in the ds2 exe. Realistically the program should be able to run without, but to I'd rather remove the possibility of a potential error in return for just granting admin access. 
 
 ### Is this safe?
 As mentioned before, this program might trip antiviruses. Similar to Cheat Engine, this program performs a fair bit of memory editing on the Dark Souls II exe. A number of antiviruses don't like this, as it is a common technique used by numerous malicious programs. The dll injection and extraction of a packed file additionally don't do this program any favors in the eyes of antivirus software. Regardless of what any antiviruses may say, this is a safe piece of software. I'm not stupid enough to burn my credibility by publishing a virus on github. 
