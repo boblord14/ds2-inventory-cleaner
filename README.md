@@ -10,6 +10,7 @@ If you need to contact me directly find me on discord at `@boblord.` or in [Bob'
 
 ## Latest Release
 Executable: [v1.0](https://github.com/boblord14/Dark-Souls-2-SotFS-CT-Bob-Edition/releases/latest)
+Dependencies: KERNEL32.dll- This is included with all modern windows installations. Don't worry about not having this. You definitely have it.
 Game: App ver. 1.03 | Calibrations 2.02
 Scholar of the First Sin only. Vanilla DS2 is not supported.
 
