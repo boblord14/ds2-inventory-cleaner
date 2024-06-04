@@ -39,7 +39,7 @@ As mentioned before, this program might trip antiviruses. Similar to Cheat Engin
 The source code for both the exe and the dll are public in this github repository. If you're sufficiently savvy with C++, you can clearly tell that they don't do anything malicious. 
 
 ### What if I still don't trust you?
-You are more than welcome to compile the code yourself. For transparency and ease of access, a complete tutorial on how to do so can be found [here]().
+You are more than welcome to compile the code yourself. For transparency and ease of access, a complete tutorial on how to do so can be found [here](https://github.com/boblord14/ds2-inventory-cleaner/blob/4a347fabe5f775fd6abdeda0ae61637cf8d97550/Compilation%20Instructions.md).
 
 
 
