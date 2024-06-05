@@ -9,13 +9,19 @@ Removes all weapons that cause the game to crash when the equipment section open
 If you need to contact me directly find me on discord at `@boblord.` or in [Bob's Shack](https://discord.gg/YAUChSMeRB)
 
 ## Latest Release
-Executable: [v1.0](https://github.com/boblord14/Dark-Souls-2-SotFS-CT-Bob-Edition/releases/latest)
-
-Dependencies: KERNEL32.dll- This is included with all modern windows installations. Don't worry about not having this. You definitely have it.
+Executable: [v1.1](https://github.com/boblord14/Dark-Souls-2-SotFS-CT-Bob-Edition/releases/latest)
 
 Game: App ver. 1.03 | Calibrations 2.02
 
 Scholar of the First Sin only. Vanilla DS2 is not supported.
+
+Dependencies:
+Both of these can be safely ignored. Only really important if you start getting errors or are unable to run the program. 
+
+- [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)- Odds are you have this installed already. DS2 requires you install at least the 2015 version, and many programs mandate a newer version than that.
+- KERNEL32.dll- This is included with all modern windows installations. Don't worry about not having this. You definitely have it.
+
+
 
 ## How To Use:
 This application is **WINDOWS ONLY**. It will **NOT** work on any linux variants/mac. Most likely not compatible with anything below Windows 10 either. 
