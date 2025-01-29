@@ -43,6 +43,6 @@ void *GameManagerImp::getItemInventory2BagList() {
 }
 
 inventoryItem *GameManagerImp::readItem(int index) {
-    auto item = reinterpret_cast<inventoryItem*>(InventoryPtr + (index*0x28));
+    auto item = reinterpret_cast<inventoryItem*>(InventoryPtr + (index*ITEM_STRUCT_SIZE));
     return item;
 }

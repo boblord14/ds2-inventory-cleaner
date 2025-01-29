@@ -10,16 +10,17 @@
 using ItemInventory2BagListPtr = decltype(PointerChain::make<void*>(uintptr_t(), 0xA8, 0x10, 0xD0));
 
 const int ITEM_STRUCT_SIZE = 0x28;
-const int ITEM_UPGRADE_OFFSET = 0x11;
-const int ITEM_ID_OFFSET = 0x14;
 
 struct inventoryItem {
     uint8_t* prevPtr;
     uint8_t* nextPtr;
-    char unk1[0x4];
+    uint8_t equipAdditionalType; //is a gesture item?
+    char unk1[0x3];
     uint32_t itemID1;
     uint32_t itemID2;
-    uint32_t index;
+    uint16_t index;
+    uint8_t equipCategoryType;
+    uint8_t equipFlags;
     float durability;
     uint8_t unk2;
     uint8_t upgrade;

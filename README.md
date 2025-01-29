@@ -1,15 +1,17 @@
 # ds2-inventory-cleaner
 A program designed to easily and efficiently remove invalid items from your inventory in Dark Souls 2, written by Boblord. 
-Provides a quick and easy fix to getting weapons with upgrade levels +11 to +15 injected in your inventory from an invader and being softlocked as a result. 
+Provides a quick and easy fix to getting weapons with upgrade levels +11 to +15 injected in your inventory from an invader and being softlocked as a result. Additionally removes any hacked items that should normally be discardable but are not, such as bugged copies of the life ring +3 that are unable to be discarded. 
 
-Removes all weapons that cause the game to crash when the equipment section opens. 
+Removes all weapons that cause the game to crash when the equipment section opens, and hacked items that may not be discardable otherwise. 
+
+All your normal valid items are kept intact, only bugged/broken/invalid items are removed. 
 
 ## Info
 ### Discord
 If you need to contact me directly find me on discord at `@boblord.` or in [Bob's Shack](https://discord.gg/YAUChSMeRB)
 
 ## Latest Release
-Executable: [v1.1](https://github.com/boblord14/Dark-Souls-2-SotFS-CT-Bob-Edition/releases/latest)
+Executable: [v1.2](https://github.com/boblord14/Dark-Souls-2-SotFS-CT-Bob-Edition/releases/latest)
 
 Game: App ver. 1.03 | Calibrations 2.02
 

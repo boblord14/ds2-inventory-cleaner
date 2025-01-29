@@ -11,6 +11,7 @@ const int ITEMPARAM_FIRST_EQUIPMENT = 1000000;
 const int ITEMPARAM_LAST_EQUIPMENT = 11840000;
 const int INVENTORY_ITEM_CAP = 3839;
 const int MAX_VALID = 10;
+const int GESTURE_TYPE = 1;
 
 DWORD WINAPI MainThread(LPVOID lpParam)
 {
@@ -35,7 +36,8 @@ DWORD WINAPI MainThread(LPVOID lpParam)
     std::cout << "\nReady to start discarding items\n" << std::endl;
     system("pause");
 
-    int removedItems = 0;
+    int removedInvalidItems = 0;
+    int removedGestureItems = 0;
     inventoryItem* itemStruct;
 
     for(int i=0; i<=INVENTORY_ITEM_CAP; i++){
@@ -43,12 +45,16 @@ DWORD WINAPI MainThread(LPVOID lpParam)
         if(itemStruct->itemID1 >= ITEMPARAM_FIRST_EQUIPMENT && itemStruct->itemID1 <= ITEMPARAM_LAST_EQUIPMENT){
             if(itemStruct->upgrade > MAX_VALID){
                 discard.discardItem(itemStruct->index);
-                removedItems++;
+                removedInvalidItems++;
             }
+        }else if(itemStruct->equipAdditionalType == GESTURE_TYPE){
+            discard.discardItem(itemStruct->index);
+            removedGestureItems++;
         }
     }
 
-    std::cout << "\n" << removedItems << " invalid items removed from inventory. You should be able to open your inventory now." << std::endl;
+    std::cout << "\n" << removedInvalidItems << " items with invalid upgrade levels and "<< removedGestureItems
+    << " items tagged as gestures removed from inventory. You should be able to open your inventory now." << std::endl;
     std::cout << "If further errors persist, try again or contact boblord for troubleshooting. \n" << std::endl;
     std::cout << "Press a key one more time to clean up and exit the program \n" << std::endl;
     system("pause");
